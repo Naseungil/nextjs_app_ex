@@ -1,8 +1,8 @@
 export default function Layout(props) {
   return (
-    <form action="">
+    <div>
       <h2>Create</h2>
       {props.children}
-    </form>
+    </div>
   );
 }
