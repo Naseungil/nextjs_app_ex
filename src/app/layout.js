@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
+import Control from "./read/[id]/Control";
 // import { useEffect, useState } from "react";
 
 /*
@@ -51,8 +52,8 @@ export default async function RootLayout({ children }) {
           <Image
             src="/qqq3.png"
             alt="home icon"
-            width={100}
-            height={100}
+            width={200}
+            height={200}
           ></Image>
           <Link href="/">WEB</Link>
         </h1>
@@ -77,17 +78,7 @@ export default async function RootLayout({ children }) {
 
         {children}
 
-        <ul>
-          <li>
-            <Link href="/create">Create</Link>
-          </li>
-          <li>
-            <Link href="/update/1">Update</Link>
-          </li>
-          <li>
-            <button>delete</button>
-          </li>
-        </ul>
+        <Control />
       </body>
     </html>
   );
