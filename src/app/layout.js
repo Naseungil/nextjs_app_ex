@@ -39,7 +39,7 @@ export default async function RootLayout({ children }) {
   }, []);
   */
 
-  const response = await fetch("http://localhost:9999/topics"); //서버단
+  const response = await fetch(process.env.NEXT_PUBLIC_API_URL + "topics"); //서버단
   const topics = await response.json(); //json->object
 
   return (
